@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIC AI - Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .status {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .status h2 {
+            margin-top: 0;
+        }
+        .endpoints {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+        }
+        .success {
+            color: #90EE90;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏛️ CIVIC AI</h1>
+        <div class="subtitle">Civic Issue Reporting Platform</div>
+
+        <div class="status">
+            <h2>✅ Frontend Status</h2>
+            <p><span class="success">React is working!</span></p>
+            <p>Frontend is running on <strong>http://localhost:3000</strong></p>
+        </div>
+
+        <div class="status">
+            <h2>🔗 Quick Links</h2>
+            <div class="endpoints">
+                <p>Frontend: http://localhost:3000</p>
+                <p>Backend API: http://localhost:5000</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="/" class="button">Open Main App</a>
+            <a href="http://localhost:5000" class="button" target="_blank">Test Backend</a>
+        </div>
+
+        <div class="status" style="margin-top: 30px;">
+            <h2>📝 Next Steps</h2>
+            <ol>
+                <li>Backend is already running on port 5000</li>
+                <li>Frontend is now running on port 3000</li>
+                <li>Open http://localhost:3000 in your browser</li>
+                <li>Login with: admin@civicai.com / admin123</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(env|sh|py\\)$\")",
+      "Bash(grep -E \"\\\\.\\(env|sh|js|json\\)$\")"
+    ]
+  }
+}
