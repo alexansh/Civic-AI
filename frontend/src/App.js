@@ -153,4 +153,28 @@ function App() {
                   }
                 />
 
-                /* 
+                {/* Catch-all 404 */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+
+              {/* Toast notifications */}
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+            </main>
+          </div>
+        </Router>
+      </ThemeProvider>
+    </AuthProvider>
+  );
+}
+
+export default App; 

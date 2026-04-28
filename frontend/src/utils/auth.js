@@ -69,4 +69,12 @@ export const requireAuth = (navigate) => {
 };
 
 export const requireRole = (role, navigate) => {
-  if (!requireAuth(navigat
+  if (!requireAuth(navigate)) {
+    return false;
+  }
+  if (getRole() !== role) {
+    navigate('/unauthorized');
+    return false;
+  }
+  return true;
+};
